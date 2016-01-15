@@ -4,6 +4,9 @@ namespace xEdelweiss\SSG;
 
 class Generator
 {
+    protected $data = [];
+
+    /** @var \Parsedown */
     private $markdownParser;
 
     /**
@@ -14,6 +17,10 @@ class Generator
         $this->markdownParser = new \Parsedown();
     }
 
+    /**
+     * @param $markdown
+     * @return string
+     */
     public function markdownToText($markdown)
     {
         return $this->markdownParser->text($markdown);
