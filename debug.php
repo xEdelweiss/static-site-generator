@@ -3,4 +3,4 @@
 require 'vendor/autoload.php';
 
 $generator = new \xEdelweiss\SSG\Generator();
-echo $generator->markdownToText('#hello world!');
+echo $generator->generateRawCache('demo');
