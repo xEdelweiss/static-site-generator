@@ -1,0 +1,17 @@
+{
+    "name": "xedelweiss/static-site-generator",
+    "authors": [
+        {
+            "name": "Michael Sverdlikovsky",
+            "email": "xedelweiss@gmail.com"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "xEdelweiss\\SSG\\": "src/"
+        }
+    }
+}
